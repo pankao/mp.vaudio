@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Jog (MIDI Behavior).v4p" systemname="Jog (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Jog (MIDI Behavior).v4p" scrollx="0" scrolly="3720">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
+   <PATCH nodename="F:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.vaudio\nodes\modules\Jog (MIDI Behavior).v4p" systemname="Jog (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Jog (MIDI Behavior).v4p" scrollx="570" scrolly="2955">
    <BOUNDS type="Window" left="11850" top="1725" width="11700" height="10050">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.101.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="27" systemname="IOBox (String)">
    <BOUNDS type="Node" left="3150" top="435" width="1875" height="270">
@@ -20,7 +20,7 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Split (Message Formular)" filename="%VVVV%\packs\vvvv-Message_x64\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Split (Message Formular)" componentmode="Hidden" id="26">
+   <NODE systemname="Split (Message Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Split (Message Formular)" componentmode="Hidden" id="26">
    <BOUNDS type="Node" left="2055" top="945" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Message Formular" slicecount="1" values="None">
@@ -104,7 +104,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Dictionary (VObjectCollection)" filename="..\..\..\VObjects\nodes\modules\VObjectCollection\Dictionary (VObjectCollection).v4p" nodename="Dictionary (VObjectCollection)" componentmode="Hidden" id="20">
+   <NODE systemname="Dictionary (VObjectCollection)" filename="%VVVV%\packs\VObjects\nodes\modules\VObjectCollection\Dictionary (VObjectCollection).v4p" nodename="Dictionary (VObjectCollection)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="5010" top="4785" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
@@ -112,12 +112,12 @@
    <PIN pinname="Reconstruct" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="Add (VObjectCollection)" filename="..\..\..\VObjects\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="Add (VObjectCollection)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="5025" top="9465" width="100" height="100">
+   <NODE systemname="Add (VObjectCollection)" filename="%VVVV%\packs\VObjects\nodes\plugins\VVVV.Nodes.VObjects.dll" nodename="Add (VObjectCollection)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="5025" top="10065" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Parent" visible="1">
    </PIN>
-   <PIN pinname="Source" visible="1">
+   <PIN pinname="Source" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Name" visible="1">
    </PIN>
@@ -126,7 +126,7 @@
    </NODE>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="19" dstpinname="Parent">
    </LINK>
-   <NODE systemname="AsWeakObject (Value)" filename="..\..\..\mp.essentials\nodes\plugins\generic\GenericAsObject\GenericAsObject.csproj" nodename="AsWeakObject (Value)" componentmode="Hidden" id="16">
+   <NODE systemname="AsWeakObject (Value)" filename="%VVVV%\packs\mp.essentials\nodes\plugins\generic\GenericAsObject\GenericAsObject.csproj" nodename="AsWeakObject (Value)" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="5205" top="8850" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
@@ -134,8 +134,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="19" dstpinname="Source">
-   </LINK>
    <NODE systemname="FormatValue (String)" nodename="FormatValue (String)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="5820" top="4275" width="100" height="100">
    </BOUNDS>
@@ -164,8 +162,8 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="12" dstpinname="Input 3">
    </LINK>
-   <NODE systemname="GetObject (VObjectCollection)" filename="..\..\..\VObjects\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="GetObject (VObjectCollection)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="5025" top="10215" width="100" height="100">
+   <NODE systemname="GetObject (VObjectCollection)" filename="%VVVV%\packs\VObjects\nodes\plugins\VVVV.Nodes.VObjects.dll" nodename="GetObject (VObjectCollection)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="5025" top="10965" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filter" visible="1">
    </PIN>
@@ -181,7 +179,7 @@
    </PIN>
    </NODE>
    <NODE systemname="FormatValue (String)" nodename="FormatValue (String)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="5175" top="9840" width="100" height="100">
+   <BOUNDS type="Node" left="5175" top="10590" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -192,8 +190,8 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="10" dstpinname="Source">
    </LINK>
-   <NODE systemname="AsStrongObject (Value)" filename="..\..\..\mp.essentials\nodes\plugins\generic\GenericAsObject\GenericAsObject.csproj" nodename="AsStrongObject (Value)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="4320" top="11700" width="100" height="100">
+   <NODE systemname="AsStrongObject (Value)" filename="%VVVV%\packs\mp.essentials\nodes\plugins\generic\GenericAsObject\GenericAsObject.csproj" nodename="AsStrongObject (Value)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="4320" top="12450" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -201,9 +199,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4335" top="12540" width="795" height="240">
+   <BOUNDS type="Box" left="4335" top="13290" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4335" top="12540" width="0" height="0">
+   <BOUNDS type="Node" left="4335" top="13290" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -215,9 +213,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5490" top="12345" width="795" height="240">
+   <BOUNDS type="Box" left="5490" top="13095" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5490" top="12345" width="0" height="0">
+   <BOUNDS type="Node" left="5490" top="13095" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -231,7 +229,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="2385" top="12015" width="100" height="100">
+   <BOUNDS type="Node" left="2385" top="12765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" slicecount="1" values="127">
    </PIN>
@@ -302,7 +300,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="GetObject (VObjectCollection)" filename="..\..\..\VObjects\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="GetObject (VObjectCollection)" componentmode="Hidden" id="33">
+   <NODE systemname="GetObject (VObjectCollection)" filename="%VVVV%\packs\VObjects\nodes\plugins\VVVV.Nodes.VObjects.dll" nodename="GetObject (VObjectCollection)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="5190" top="5310" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filter" visible="1" slicecount="1" values="0">
@@ -330,7 +328,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="AsStrongObject (Value)" filename="..\..\..\mp.essentials\nodes\plugins\generic\GenericAsObject\GenericAsObject.csproj" nodename="AsStrongObject (Value)" componentmode="Hidden" id="35">
+   <NODE systemname="AsStrongObject (Value)" filename="%VVVV%\packs\mp.essentials\nodes\plugins\generic\GenericAsObject\GenericAsObject.csproj" nodename="AsStrongObject (Value)" componentmode="Hidden" id="35">
    <BOUNDS type="Node" left="5190" top="5820" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
@@ -511,7 +509,7 @@
    <LINK srcnodeid="48" srcpinname="Output" dstnodeid="19" dstpinname="Add">
    </LINK>
    <NODE systemname="Sift (Value)" nodename="Sift (Value)" componentmode="Hidden" id="50">
-   <BOUNDS type="Node" left="5925" top="10995" width="100" height="100">
+   <BOUNDS type="Node" left="5925" top="11745" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filter" visible="1" slicecount="3" values="10,13,14">
    </PIN>
@@ -521,7 +519,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="4950" top="10770" width="100" height="100">
+   <BOUNDS type="Node" left="4950" top="11520" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Index" visible="1" slicecount="1" values="0">
    </PIN>
@@ -540,7 +538,7 @@
    </LINK>
    <LINK srcnodeid="50" srcpinname="Hits" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="SplitStatus (MIDI)" filename="SplitStatus (MIDI).v4p" componentmode="Hidden" id="55" nodename="..\..\..\..\..\libs\mcropack\packs\mp.audio\nodes\modules\SplitStatus (MIDI).v4p">
+   <NODE systemname="SplitStatus (MIDI)" filename="%VVVV%\packs\mp.vaudio\nodes\modules\SplitStatus (MIDI).v4p" componentmode="Hidden" id="55" nodename="..\..\..\..\..\libs\mcropack\packs\mp.audio\nodes\modules\SplitStatus (MIDI).v4p">
    <BOUNDS type="Node" left="1845" top="2460" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1845" top="2460" width="4800" height="3600">
@@ -599,5 +597,19 @@
    <LINK srcnodeid="55" srcpinname="Control" dstnodeid="12" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="52" srcpinname="Output" dstnodeid="12" dstpinname="Input 2">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="56">
+   <BOUNDS type="Node" left="5220" top="9420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="56" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="19" dstpinname="Source">
    </LINK>
    </PATCH>
