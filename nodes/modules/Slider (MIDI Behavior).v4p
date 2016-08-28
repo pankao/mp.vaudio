@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="F:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.vaudio\nodes\modules\Slider (MIDI Behavior).v4p" systemname="Slider (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Slider (MIDI Behavior).v4p" scrollx="945" scrolly="3675">
+   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.vaudio\nodes\modules\Slider (MIDI Behavior).v4p" systemname="Slider (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Slider (MIDI Behavior).v4p" scrollx="1935" scrolly="0">
    <BOUNDS type="Window" left="11595" top="4650" width="9000" height="10530">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -89,7 +89,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2550" top="1620" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -215,9 +215,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3285" top="9735" width="795" height="240">
+   <BOUNDS type="Box" left="3330" top="10875" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3285" top="9735" width="0" height="0">
+   <BOUNDS type="Node" left="3330" top="10875" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -225,7 +225,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="3" values="127,0,67">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0.102362204724409">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25" systemname="IOBox (Value Advanced)">
@@ -255,8 +255,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="31" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="24" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="OR (Boolean Spectral)" filename="" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="2355" top="5700" width="100" height="100">
@@ -398,4 +396,54 @@
    </LINK>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="3675" top="10335" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source Maximum" visible="1">
+   </PIN>
+   <PIN pinname="Source Minimum" visible="1">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="3945" top="9960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6840" top="2850" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6840" top="2850" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Deadzone">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="41" dstpinname="Source Maximum">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Source Minimum">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="41" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="24" dstpinname="Y Input Value">
+   </LINK>
    </PATCH>

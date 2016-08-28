@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.103.dtd" >
-   <PATCH nodename="F:\vvvv\libs\md.ecosystem\packs\mp.vaudio\nodes\modules\GetFrequencyLevel (Value VAudio.FFT).v4p" systemname="GetFrequencyLevel (Value VAudio.FFT)" filename="F:\vvvv\libs\md.ecosystem\packs\mp.vaudio\nodes\modules\GetFrequencyLevel (Value VAudio.FFT).v4p" scrollx="0" scrolly="8325">
-   <BOUNDS type="Window" left="6915" top="2490" width="18255" height="10560">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
+   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.vaudio\nodes\modules\GetFrequencyLevel (Value VAudio.FFT).v4p" systemname="GetFrequencyLevel (Value VAudio.FFT)" filename="F:\vvvv\libs\md.ecosystem\packs\mp.vaudio\nodes\modules\GetFrequencyLevel (Value VAudio.FFT).v4p" scrollx="1725" scrolly="0">
+   <BOUNDS type="Window" left="12765" top="3375" width="18255" height="10560">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -1162,4 +1162,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
    </PATCH>
