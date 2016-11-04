@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.vaudio\nodes\modules\Slider (MIDI Behavior).v4p" systemname="Slider (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Slider (MIDI Behavior).v4p" scrollx="1935" scrolly="0">
-   <BOUNDS type="Window" left="11595" top="4650" width="9000" height="10530">
+   <PATCH nodename="C:\vvvv\app\vvvv_autoalpha\packs\mp.vaudio\nodes\modules\Slider (MIDI Behavior).v4p" systemname="Slider (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Slider (MIDI Behavior).v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="10950" top="1365" width="10845" height="12510">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -65,9 +65,9 @@
    <LINK srcnodeid="2" srcpinname="D1" dstnodeid="6" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3630" top="1650" width="795" height="240">
+   <BOUNDS type="Box" left="4830" top="1650" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3630" top="1650" width="0" height="0">
+   <BOUNDS type="Node" left="4830" top="1650" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1">
    </PIN>
@@ -85,9 +85,9 @@
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2550" top="1620" width="540" height="240">
+   <BOUNDS type="Box" left="3750" top="1620" width="540" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2550" top="1620" width="0" height="0">
+   <BOUNDS type="Node" left="3750" top="1620" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -295,9 +295,9 @@
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5475" top="1635" width="480" height="480">
+   <BOUNDS type="Box" left="6675" top="1635" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5475" top="1635" width="0" height="0">
+   <BOUNDS type="Node" left="6675" top="1635" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -323,7 +323,7 @@
    <LINK srcnodeid="33" srcpinname="Hits" dstnodeid="25" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="SplitStatus (MIDI)" filename="%VVVV%\packs\mp.vaudio\nodes\modules\SplitStatus (MIDI).v4p" componentmode="Hidden" id="36" nodename="..\..\..\..\..\libs\mcropack\packs\mp.audio\nodes\modules\SplitStatus (MIDI).v4p">
-   <BOUNDS type="Node" left="945" top="2310" width="100" height="100">
+   <BOUNDS type="Node" left="945" top="2310" width="1020" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="945" top="2310" width="4800" height="3600">
    </BOUNDS>
@@ -339,7 +339,7 @@
    <LINK srcnodeid="2" srcpinname="Status" dstnodeid="36" dstpinname="Status">
    </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="2595" top="2640" width="100" height="100">
+   <BOUNDS type="Node" left="2745" top="2640" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" slicecount="1" values="-1">
    </PIN>
@@ -421,11 +421,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6840" top="2850" width="795" height="240">
+   <BOUNDS type="Box" left="8040" top="2850" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6840" top="2850" width="0" height="0">
+   <BOUNDS type="Node" left="8040" top="2850" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.04">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

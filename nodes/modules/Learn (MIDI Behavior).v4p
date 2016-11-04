@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.vaudio\nodes\modules\Learn (MIDI Behavior).v4p" systemname="Learn (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Learn (MIDI Behavior).v4p" scrollx="0" scrolly="45">
+   <PATCH nodename="C:\vvvv\app\vvvv_autoalpha\packs\mp.vaudio\nodes\modules\Learn (MIDI Behavior).v4p" systemname="Learn (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Learn (MIDI Behavior).v4p" scrollx="0" scrolly="960">
    <BOUNDS type="Window" left="870" top="2595" width="9000" height="6000">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
