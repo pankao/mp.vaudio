@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="F:\vvvv\app\vvvv_50alpha34.104_x64\packs\mp.vaudio\nodes\modules\Jog (MIDI Behavior).v4p" systemname="Jog (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Jog (MIDI Behavior).v4p" scrollx="570" scrolly="2955">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+   <PATCH nodename="C:\vvvv\libs\md.ecosystem\packs\mp.vaudio\nodes\modules\Jog (MIDI Behavior).v4p" systemname="Jog (MIDI Behavior)" filename="E:\vvvv\libs\mcropack\packs\mp.audio\nodes\modules\Jog (MIDI Behavior).v4p" scrollx="570" scrolly="2955">
    <BOUNDS type="Window" left="11850" top="1725" width="11700" height="10050">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -612,4 +612,6 @@
    </LINK>
    <LINK srcnodeid="56" srcpinname="Output" dstnodeid="19" dstpinname="Source">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.7">
+   </PACK>
    </PATCH>
